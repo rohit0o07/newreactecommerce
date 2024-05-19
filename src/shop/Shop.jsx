@@ -5,6 +5,7 @@ import ProductCards from "./ProductCards";
 import Pagination from "./Pagination";
 import Search from "./Search";
 import ShopCategory from "./ShopCategory";
+import PopularPost from "./PopularPost";
 
 
 
@@ -79,6 +80,7 @@ const filterItem = (curcat) => {
                               menuItems={menuItems}
                               setProducts={setProducts}
                               selectedCategory={selectedCategory}/>
+                <PopularPost/>
               </aside>
             </div>
           </div>
