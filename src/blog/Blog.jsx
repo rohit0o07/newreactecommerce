@@ -1,9 +1,10 @@
 import React from 'react'
+import PageHeader from '../components/PageHeader'
 
 const Blog = () => {
   return (
     <div>
-      blog
+      <PageHeader title="Blog Page" curPage="Blogs"/>
     </div>
   )
 }
