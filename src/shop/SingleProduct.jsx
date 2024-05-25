@@ -25,7 +25,7 @@ const SingleProduct = () => {
 
   return (
     <div>
-      <PageHeader title={"Our Shop Single"} curPage={"shop/ Single Product"} />
+      <PageHeader title={"Our Shop Single"} curPage={" / Shop/ Single Product"} />
       <div className="shop-single padding-tb aside-bg">
         <div className="container">
           <div className="row justify-content-center">
