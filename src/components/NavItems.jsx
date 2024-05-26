@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/images/logo/logo.png';
+import { AuthContext } from "../contexts/AuthProvider";
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   const [socialToggle, setSocialToggle] = useState(false);
@@ -14,6 +15,9 @@ const NavItems = () => {
       setHeaderFixed(false);
     }
   });
+
+  //auth info
+  const {user} = useContext(AuthContext)
 
   return (
     <header className={`header-section style-4 ${headerFixed ? "headerfixedfadeInUp" : ""}`}>
